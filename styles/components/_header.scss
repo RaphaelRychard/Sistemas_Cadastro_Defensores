@@ -1,0 +1,83 @@
+@import '../abstract/variaveis';
+
+$color_1: white;
+$color_2: #d4d4d4;
+$background-color_1: #00000070;
+
+.main-header {
+    height: 180px;
+    width: 1125px;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: start;
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+        margin-right: 10px;
+
+        a {
+            color: $color_1;
+
+            &:hover {
+                color: $color_2;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .space-left {
+        margin-left: 20px;
+    }
+
+    .icons {
+        svg {
+    
+            fill: #ffffff;
+            height: 30px;
+            padding: 20px;
+            box-sizing: content-box;
+            background: radial-gradient(50% 50%, $cor-primaria 0%, $cor-secundaria 100%) 0% 0% no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: content-box;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px #00000025;
+    
+            &:hover {
+                background: radial-gradient(50% 50%, #399b72 0%, #063525 100%) 0% 0% no-repeat;
+                fill: #ffffff;
+                background-color: $background-color_1;
+                cursor: pointer;
+            }
+        }
+    
+        .svg-wrapper {
+            position: fixed;
+            bottom: 50px;
+            right: 10px;
+        }
+    
+        .svg-wrapper {
+            display: flex;
+            align-items: center;
+        
+            li {
+                margin: 0 10px;
+            }
+        }
+    
+    }
+}
+
+

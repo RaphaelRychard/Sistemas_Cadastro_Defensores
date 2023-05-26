@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import './variaveis';
+
+html,
+body {
+    font-family: $fonte;
+}
+
+
+$color_1: #0d302a;
+$color_2: #727272;
+$color_3: #000000;
+$background-color_1: #f2f2f2;
+$background-color_2: #ffffff;
+$background-color_3: #00000015;
+$background-color_4: #00000057;
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: $fonte;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: $background-color_1;
+    overflow-x: hidden;
+}
+
+.logo-uisi {
+    width: 110px;
+}
+
+#markBlack {
+    color: $color_1;
+    font-weight: 600;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px #00000017;
+}
+
+#disble {
+    color: $color_2;
+    pointer-events: none;
+    cursor: none;
+}
+
+.disabled {
+    background-color: $background-color_2;
+    color: $color_3;
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.disabledLabel {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.logo-wrapper {
+    height: 30px;
+    background-color: $background-color_3;
+    padding: 20px;
+    fill: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #00000017;
+
+    &:hover {
+        padding: 20px;
+        fill: #ffffff;
+        background-color: $background-color_4;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,73 @@
+@import '../abstract/variaveis';
+
+.main-footer {
+    background-color: $background-color-black;
+    box-shadow: 0 -3px 6px #2122273a;
+    height: 300PX;
+    padding: 20px;
+
+    .sistema-portaria {
+        abbr {
+            font-weight: 800;
+            letter-spacing: 0.9px;
+            font-size: 1.3em;
+            font-style: none;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        a {
+            font-weight: 800;
+            letter-spacing: 0.9px;
+            font-size: 1.3em;
+            font-style: none;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+            color: $color-text-white;
+        }
+
+        height: 100%;
+    }
+
+    .wrapper-title {
+        height: 100%;
+    }
+
+    div {
+        a {
+            &:hover {
+                color: $cor-tercearia;
+                text-decoration: underline;
+            }
+
+            &:active {
+                color: $cor-secundaria;
+            }
+        }
+
+        .sistema-portaria {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+            text-align: right;
+            p {
+                font-size: 1.1em;
+                font-style: 500;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $color-text-white;
+            }
+        }
+    }
+
+    abbr {
+        color: $color-text-white;
+        font-style: 500;
+        text-transform: uppercase;
+    }
+}

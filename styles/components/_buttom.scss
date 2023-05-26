@@ -1,0 +1,60 @@
+@import '../abstract/variaveis';
+
+.main-button {
+    margin-top: 12em;
+    margin-bottom: 200PX;
+    text-align: center;
+    display: block;
+}
+
+.btn {
+    padding: 15px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 300ms linear;
+    box-shadow: 0px 0px 3px #00000031;
+    border: 1px solid #d3d3d3;
+}
+
+a.btn.voltar {
+    background-color: $cor-tercearia;
+    color: $color-text-black;
+    box-sizing: border-box;
+
+    & {
+        color: $color-text-black;
+        margin-right: 10px;
+        padding: 15px 40px;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: $cor-tercearia;
+            color: $color-text-black;
+            border: 1px solid #127957;
+        }
+    }
+}
+
+.btn.-disable {
+    background-color: $cor-tercearia;
+    pointer-events: none;
+    color: #686868;
+    margin-right: 10px;
+}
+
+.btn.proximo {
+    border: 1px solid #127957;
+    background-color: $cor-primaria;
+    color: $color-text-white;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: $cor-secundaria;
+        border: 1px solid #0e5a41;
+        color: $color-text-white;
+    }
+}
+

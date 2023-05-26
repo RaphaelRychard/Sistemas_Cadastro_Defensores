@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* ESTILOS PARA TELAS */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 11pt;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+h3 {
+    font-size: 1em;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+body {
+    width: 800px;
+    text-align: justify;
+    margin: 0 auto;
+    line-height: 1.5em;
+    background-color: #f6f6f6;
+}
+
+main {
+    background-color: #fff;
+    padding: 65px;
+    padding-bottom: 100px;
+}
+
+ol {
+    list-style: inside;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+
+ol > li {
+    margin-top: 5px;
+    text-align: justify;
+    display: flex;
+}
+
+hr {
+    color: black;
+    border: none;
+    border-top: 1px solid black;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.ass:nth-child(1n) {
+    margin-top: 60px;
+}
+
+.ass:nth-child(2n) {
+    margin-top: 100px;
+}
+
+p.date {
+    margin-top: 50px;
+    text-align: right;
+}
+
+section {
+    margin-top: 20px;
+}
+
+li:nth-child(1n)::before {
+    content: "a)";
+    margin-right: 6px;
+}
+
+li:nth-child(2n)::before {
+    content: "b)";
+    margin-right: 6px;
+}
+
+li:nth-child(3n)::before {
+    content: "c)";
+    margin-right: 6px;
+}
+
+li:nth-child(4n)::before {
+    content: "d)";
+    margin-right: 6px;
+}
+

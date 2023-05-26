@@ -1,0 +1,31 @@
+@import '../abstract/variaveis';
+
+.parallax-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url(../images/patterns/parallax_overlay.png);
+    background-repeat: repeat;
+    z-index: 1;
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 10em;
+        width: calc(100% + 50em);
+        border-radius: 50%;
+        background: #f2f2f2;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: -7em;
+        box-shadow: 0px -6px 6px 0px #00000014;
+    }
+}
+
+.topo-menu {
+    top: 177px;
+    height: 50px;
+}

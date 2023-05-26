@@ -1,0 +1,79 @@
+@import '../abstract/variaveis';
+
+.main-termos {
+    margin-top: 50px;
+    color: $color-text-black;
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.05em;
+        color: $color-text-black;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+.menu-downloads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 6px #00000018;
+    width: 900px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: $background-color;
+}
+
+.button-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px #0000002E;
+    border-radius: 14px;
+    padding: 15px 20px;
+    color: $color-text-white;
+    margin: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.14s linear;
+}
+
+.button.-pesquisar {
+    background-color: $cor-fundo-white;
+    color: $color-text-black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    &:hover {
+        color: $cor-secundaria;
+    }
+
+    &:active {
+        background-color: $cor-primaria;
+    }
+}
+
+.button.-dowload {
+    background-color: $cor-primaria;
+
+    &:hover {
+        background-color: $cor-secundaria;
+        color: $color-text-white;
+    }
+
+    &:active {
+        background-color: $cor-secundaria;
+        color: $color-text-white;
+    }
+}
